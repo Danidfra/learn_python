@@ -84,4 +84,8 @@ else:
 
     print(f"Atualizando minhas informações você se chama {nome} tem {idade} anos, e esta pesando atualmente {peso} kgs.")
 
+    valid = input("Agora as informações estão corretas? s/n ")
+    
+    # nmr = float(input("Digite um numero... "))
 
+    # print(type(nmr))
