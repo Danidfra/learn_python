@@ -1,4 +1,6 @@
-from math import factorial;
+from math import factorial, floor, ceil;
+# import random;
+# import emoji
 
 def nmr_f(x):
     r = factorial(x)
@@ -23,3 +25,10 @@ if q1 == "s":
 
 else:
     print("Tchau tchau, ate a proxima!")
+
+
+# nmrA = random.random() * 10
+
+# print(nmrA)
+# print(ceil(nmrA))
+# print(floor(nmrA))
