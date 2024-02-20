@@ -1,6 +1,5 @@
 from math import factorial, floor, ceil;
 # import random;
-# import emoji
 
 def nmr_f(x):
     r = factorial(x)
