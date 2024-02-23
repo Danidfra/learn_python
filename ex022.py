@@ -2,13 +2,13 @@ def obt_name():
     quest_1 = (input('Olá, poderia me fornecer seu nome completo? s/n ')).lower()
 
     if quest_1 == 's':
-        fullname = input('Otímo, qual é seu nome completo? ')
+        fullname = input('Otímo, qual é seu nome completo? ').strip()
     elif quest_1 == 'n':
         quest_2 = (input('Que pena, gostaria de te falar algumas informações sobre ele... Tem certeza que não quer falar o seu nome completo? s/n ')).lower()
         if quest_2 == 's':
             print('Ok, eu respeito sua opção, obrigado por seu tempo, caso mude de ideia depois sabe onde me encontrar!! ')
         else:
-            fullname = input('Otímo, qual é seu nome completo? ')
+            fullname = input('Otímo, qual é seu nome completo? ').strip()
 
     else:
         print('Você não respondeu nada... Vamos tentar novamente. ')
