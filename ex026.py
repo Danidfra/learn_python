@@ -1,22 +1,15 @@
-frase = input('Digite aqui sua frase: ')
+frase = input('Digite aqui sua frase: ').strip()
 
 frase_l = frase.lower()
 
 lista = list(frase_l)
 lista.reverse()
 
-print(lista)
 
 contagem_a = frase_l.count('a')
-contagem_espaços = frase_l.count(' ')
 pI = frase_l.find('a')
-pF = ''
-frase_cortada = frase_l.split()
-tamanho_lista = len(frase_cortada)
+pF = frase_l.rfind('a')
 
-for i in lista:
-    if i == 'a':
-        q_total = len(lista) - i
-        pF = q_total - 1
-        print(lista[pF])
-        break
+print(f'A letra "A" aparece {contagem_a} vezes na frase. ')
+print(f'A primeira letra "A" apareceu na {pI + 1}˚ posição.')
+print(f'A última letra "A" apareceu na {pF + 1}˚ posição.')
