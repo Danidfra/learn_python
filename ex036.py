@@ -17,11 +17,11 @@ valor_mensal_ajustado = valor_casa / (anos_ajustado * 12)
 if valor_mensal < porcentagem_salario:
     print('PROCESSANDO...')
     sleep(3)
-    print(f'Seu empréstimo foi aprovado! Parabéns... \nO valor mensal a ser pago será de R${valor_mensal:.2f} por mes. ')
+    print(f'Seu empréstimo foi aprovado! Parabéns... \nO valor mensal a ser pago será de R${valor_mensal:.2f} por mês. ')
 elif valor_mensal > porcentagem_salario:
     print('PROCESSANDO...')
     sleep(3)
     print('O empréstimo foi negado! ')
-    print(f'Para o valor deste empréstimo ser aprovado \nvocê teria de aumentar o tempo de pagamento para {anos_ajustado} anos\nlevando em conta seu salario atual de R${salario_comprador:.2f}\npagando o valor de R${valor_mensal_ajustado:.2f} por mes. ')
+    print(f'Para o valor deste empréstimo ser aprovado \nvocê teria de aumentar o tempo de pagamento para {anos_ajustado} anos\nlevando em conta seu salario atual de R${salario_comprador:.2f}\npagando o valor de R${valor_mensal_ajustado:.2f} por mês. ')
 
 
