@@ -25,24 +25,16 @@ for i in range(0, qnt_pessoas):
         if sexo == 'f':
             if age < 20:
                 qnt_mulheres += 1
-    elif i < qnt_pessoas -1:
         
-        if sexo == 'm':
-            if age > mais_velho:
-                nome_homem_velho = name
-                mais_velho = age
-        if sexo == 'f':
-            if age < 20:
-                qnt_mulheres += 1
-    else:
-        media_idade = (soma_idade / contador_media)
-        if sexo == 'm':
-            if age > mais_velho:
-                nome_homem_velho = name
-                mais_velho = age
-        if sexo == 'f':
-            if age < 20:
-                qnt_mulheres += 1
+    if sexo == 'm':
+        if age > mais_velho:
+            nome_homem_velho = name
+            mais_velho = age
+    if sexo == 'f':
+        if age < 20:
+            qnt_mulheres += 1
+
+media_idade = (soma_idade / contador_media)
 
 
 print(f'A média de idade do grupo é de {media_idade:.2f}.')
