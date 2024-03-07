@@ -27,12 +27,12 @@ print('-=-'*2, F'SORTEANDO {qnt_jogos} JOGOS', '-=-'*2)
 
 for c, i in enumerate(lista_jogos):
     sleep(0.5)
-    print(f'Jogo {c + 1}: ', end='')
+    print(f'{f'Jogo {c + 1}: ':10}', end='')
     for d, j in enumerate(i):
         if d == (len(i) - 1):
-            print(f'{j} ')
+            print(f'{j:2} ')
         else:
-            print(f'{j} ', end='')
+            print(f'{j:2} ', end='')
 
 print('-=-'*2, '< BOA SORTE! >', '-=-'*2)
 

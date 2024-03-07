@@ -8,17 +8,24 @@ for i in range(0, qnt_nmr):
     nmr = int(input(f'Digite o {i + 1}º valor: '))
 
     if nmr % 2 == 0:
-        lista_nmr[0].append(str(nmr))
+        lista_nmr[0].append(nmr)
     else:
-        lista_nmr[1].append(str(nmr))
-    
-lista_str_par = ', '.join(lista_nmr[0])
-lista_str_impar = ', '.join(lista_nmr[1])
+        lista_nmr[1].append(nmr)
 
-print(f'Os valores pares digitados foram: {lista_str_par}.')
-# for i in lista_nmr_par:
-#     print(f'{i}')
-# print(f'Os valores ímpares digitados foram: ', end='')
-print(f'Os valores ímpares digitados foram: {lista_str_impar}.')
+lista_nmr[0].sort()
+lista_nmr[1].sort()
+
+print('Os valores pares digitados foram: ', end='')
+for c, i in enumerate(lista_nmr_par):
+    if c == (len(lista_nmr_par) - 1 ):
+        print(f'{i}.')
+    else:
+        print(f'{i}, ')
+print(f'Os valores ímpares digitados foram: ', end='')
+for d, j in enumerate(lista_nmr_impar):
+    if d == (len(lista_nmr_impar) - 1 ):
+        print(f'{j}.')
+    else:
+        print(f'{j}, ')
 
 print(f'A lista completa é: {lista_nmr}')
