@@ -23,7 +23,7 @@ print(jogador)
 print('-+-'*20)
 print(f'O jogador se chama {nome}.')
 print(f'O {nome} jogou {jogador["partidas"]} partidas e seu historico de gols foi:')
-for c, i in enumerate(jogador["gols"]):
-    print(f' - Na {c + 1}ª partida fez {i} gols.')
+for c, i in enumerate(jogador["gols"], start=1):
+    print(f' - Na {c}ª partida fez {i} gols.')
 
 print(f'O {nome} fez um total de {jogador["totalGols"]} gols.')
