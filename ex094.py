@@ -41,14 +41,7 @@ print(f'\nC) As mulheres do grupo são:')
 for c, i in enumerate(lista_pessoas):
     if i["sexo"] == 'f':
         print(f' - {i["nome"]}.')
-    # if c == 0:
-    #     print(f'\nD) As pessoas acima da média de idade são:')
-    #     if i["idade"] > media_idade:
-    #         print(f' - {i["nome"]} com {i["idade"]} anos.')
-    # else:
-    #     if i["idade"] > media_idade:
-    #         print(f' - {i["nome"]} com {i["idade"]} anos.')
-        
+
 
 print(f'\nD) As pessoas acima da média de idade são:')
 for i in lista_pessoas:
