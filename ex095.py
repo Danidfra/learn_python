@@ -35,11 +35,19 @@ print('-+-'*20)
 
 print(f'\033[4m{'Cod':4}|{'Nome':14}|{'Part'}|{'Tot Gols'}')
 for c, i in enumerate(lista_jogadores):
-    print(f'{(c + 1):4}|{i["nome"]:14}|{i["partidas"]:4}|{i["totGols"]:8}\033[m')
-    
+    if c == (len(lista_jogadores) - 1):
+        print(f'\033[m{(c + 1):4}|{i["nome"]:14}|{i["partidas"]:4}|{i["totGols"]:8}')
+    else:
+        print(f'{(c + 1):4}|{i["nome"]:14}|{i["partidas"]:4}|{i["totGols"]:8}')
+
 print('-+-'*20)
 
 mostrarDados = input('Gostaria de ver os dados dos gols de algum jogador com mais detalhes? S/N ').strip().lower()
+
+while mostrarDados not in 'sn':
+    print('Opção inválida!')
+    mostrarDados = input('Gostaria de ver os dados dos gols de algum jogador com mais detalhes? S/N ').strip().lower()
+
 
 if mostrarDados in 'Ss':
     while True: 
