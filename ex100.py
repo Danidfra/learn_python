@@ -1,16 +1,17 @@
 from random import randint;
-from time import sleep;
 
 def sorteia(x):
-    sleep(0.5)
+    """
+    -> Sorteia uma certa quantidade de números e retorna uma lista com os números:
+    :param x: Quantidade de números a serem sorteados
+    :return: Retorna a lista_nmrs que foi criada na função
+    """
     print(f'Sorteando {x} valores para a lista: ', end='')
     lista_nmrs = []
     for i in range(0, x):
         nmr = randint(1, 100)
-        sleep(0.5)
         print(f'{nmr} ', end='')
         lista_nmrs.append(nmr)
-    sleep(0.5)
     print('Pronto!')
     return lista_nmrs
 
@@ -25,4 +26,6 @@ numeros = sorteia(int(input('Quantos números gostaria de sortear? ')))
 
 s_par = somaPar(numeros)
 
-print(f'Somando os valores pares da lista {numeros}, temos o resultado {s_par}.')
+print(f'Somando os valores pares da lista {numeros}, temos o resultado {s_par}.')   
+
+# help(sorteia)
