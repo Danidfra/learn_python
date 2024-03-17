@@ -1,4 +1,3 @@
-from datetime import datetime;
 
 def testaIdade(i):
     """
@@ -8,12 +7,10 @@ def testaIdade(i):
     """
     if i < 16:
         return 'NEGADO'
-    elif i < 18:
+    elif i < 18 or i >=65:
         return 'OPCIONAL'
-    elif i < 65:
+    else:
         return 'OBRIGATÓRIO'
-    if i >= 65:
-        return 'OPCIONAL'
 
 def voto(a):
     """"
@@ -21,6 +18,7 @@ def voto(a):
     :param a: ano de nascimento
     :return: retorna a frase contendo o status do voto
     """
+    from datetime import datetime;
     ano_atual = datetime.now().year
     age = ano_atual - a
 
