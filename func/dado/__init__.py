@@ -1,17 +1,17 @@
-# from moeda
-
-
 def leiaDinheiro(p):
 
-    n = input(p)
+    inp = input(p).strip()
+    n = inp.replace(',','.')
+    test = n.replace('.','')
 
-    if n.isnumeric():
-
+    if test.isnumeric():
         return float(n)
     else:
-        while not n.isnumeric():
+        while not test.isnumeric():
             print('Erro! ')
-            n = input('Digite o preço: R$')
+            inp = input(p).strip()
+            n = inp.replace(',','.')
+            test = n.replace('.','')
         
         return float(n)
     
