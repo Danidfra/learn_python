@@ -1,11 +1,15 @@
 def aumentar(n, p):
-    return n * (1 + (p/100))
+    res = n * (1 + (p/100))
+    return res
 def diminuir(n, p):
-    return n * (1 - (p / 100))
+    res = n * (1 - (p / 100))
+    return res 
 def dobro(n):
-    return n * 2
+    res = n * 2
+    return res 
 def metade(n):
-    return n/2
+    res = n/2
+    return res 
 
 
 def formata(p):
@@ -16,7 +20,7 @@ def formata(p):
     for c, i in enumerate(price_cortado):
         if i == ',':
             price_cortado[c] = '.'
-        elif i == ',':
+        elif i == '.':
             price_cortado[c] = ','
 
     price_formatado = ''.join(price_cortado)
