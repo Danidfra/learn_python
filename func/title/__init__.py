@@ -10,18 +10,18 @@
 
 class Tabela():
 
-    def __init__(self, text, tam, item):
-        self.text = text
+    def __init__(self, tam, item):
         self.tam = tam
         self.item = item
 
         
-    def montarTabela(self):    
+    def montar(self, title,tab=True):    
         print('-'*self.tam)
-        print((self.text).center(self.tam))
+        print((title.upper()).center(self.tam))
         print('-'*self.tam)
 
-        for c,i in enumerate(self.item, start=1):
-                print(f'{c} - {i}.')
+        if tab:
+            for c,i in enumerate(self.item, start=1):
+                    print(f'{c} - {i}.')
 
-        print('-'*self.tam)
+            print('-'*self.tam)
