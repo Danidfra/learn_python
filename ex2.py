@@ -22,7 +22,7 @@ while True:
     except ValueError:
         print('Opção invalida!')
         continue
-    # else:
+
     if choice == 1 or choice == 2:
         with open('dicionario.txt', 'r') as ler:
             infos = ler.read()
