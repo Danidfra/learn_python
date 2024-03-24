@@ -15,13 +15,14 @@ class Tabela():
         self.item = item
 
         
-    def montar(self, title,tab=True):    
-        print('-'*self.tam)
+    def montar(self,title,cab=False, text='',tab=True):    
+        print('-'*self.tam)             
         print((title.upper()).center(self.tam))
         print('-'*self.tam)
-
+        if cab:
+            print(f'{text}')
         if tab:
             for c,i in enumerate(self.item, start=1):
-                    print(f'{c} - {i}.')
-
+                    print(f'{c} - {i}')
+            print()
             print('-'*self.tam)
